@@ -19,4 +19,4 @@ https://johngeorge1998.github.io/task_2hats_logic_john/
 ## Installation & Setup  
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/yourusername/repository-name.git
+   git clone https://github.com/johngeorge1998/task_2hats_logic_john.git
