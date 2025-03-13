@@ -17,6 +17,7 @@ loadHTML("footer", "html/footer.html");
 function addNavToggle() {
   const menuToggle = document.querySelector(".menu-toggle");
   const navLinks = document.querySelector(".nav-links");
+  const body = document.body;
 
   if (menuToggle && navLinks) {
     menuToggle.addEventListener("click", () => {
@@ -24,7 +25,17 @@ function addNavToggle() {
 
       if (navLinks.classList.contains("active")) {
         menuToggle.innerHTML = "✖";
+        body.classList.add("no-scroll");
       } else {
+        menuToggle.innerHTML = "☰";
+        body.classList.remove("no-scroll"); 
+      }
+    });
+
+     document.addEventListener("click", (event) => {
+      if (!navLinks.contains(event.target) && !menuToggle.contains(event.target)) {
+        navLinks.classList.remove("active");
+        body.classList.remove("no-scroll");
         menuToggle.innerHTML = "☰";
       }
     });
@@ -32,6 +43,7 @@ function addNavToggle() {
     console.log("Menu toggle or nav-links not found.");
   }
 }
+
 
 document.addEventListener("DOMContentLoaded", function () {
   setTimeout(function () {

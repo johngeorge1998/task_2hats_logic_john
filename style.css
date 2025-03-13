@@ -699,3 +699,10 @@ body.dark-mode .nav-links a {
 body.dark-mode .nav-links.active {
   display: flex;
 }
+
+body.no-scroll {
+    overflow: hidden;
+    height: 100vh;
+  }
+  
+  
