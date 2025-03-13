@@ -1,0 +1,506 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Nunito", sans-serif;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.right {
+  grid-column: span 4;
+  background-image: url("assets/background.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.team {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  padding: 0 25px;
+  gap: 15px;
+}
+.team-member {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team-member img {
+  width: 95%;
+  height: auto;
+  object-fit: contain;
+}
+.nav-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 90px;
+  width: 100%;
+}
+#navbar {
+  width: 100%;
+  position: fixed;
+  top: 20px;
+  left: 0;
+  padding: 15px 0;
+  z-index: 1000;
+}
+nav {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 90px;
+  padding-left: 90px;
+  padding-top: 10px;
+}
+nav ul li {
+  display: flex;
+  align-items: center;
+}
+.nav-icon {
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+  margin-top: -20px;
+}
+nav ul li a {
+  color: #838383;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+}
+nav ul li:first-child a {
+  color: #1a1a1a;
+  font-weight: 600;
+  font-size: 24px;
+}
+.left {
+  grid-column: span 8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+}
+.about-content {
+  display: flex;
+  width: 100%;
+  padding-left: 90px;
+  margin-top: 100px;
+}
+.hero {
+  padding: 20px 0px;
+}
+.hero h1 {
+  font-size: 54.5px;
+  font-weight: 700px;
+}
+.hero p {
+  color: #666;
+  font-size: 16.2px;
+  font-weight: 400px;
+}
+.info {
+  display: flex;
+  gap: 50px;
+  margin-top: 40px;
+}
+.info-description {
+  margin-top: 20px;
+}
+.icon-block {
+  margin-top: -35px;
+}
+.students {
+  align-items: center;
+  justify-content: center;
+}
+.students h2 {
+  font-size: 34.7px;
+  font-weight: 400;
+  margin-right: 10px;
+  color: #202020;
+}
+.students p {
+  font-size: 13px;
+  font-weight: 400;
+  color: #202020;
+}
+.avatars {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+.avatars img {
+  width: 94.59px;
+  height: 91.37px;
+  border-radius: 50%;
+  margin-left: -50px;
+}
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+.primary-btn {
+  background: #2f584e;
+  color: white;
+  border: none;
+  border-radius: 60.2px;
+  width: 225.71px;
+  height: 55.99px;
+  cursor: pointer;
+  font-size: 16.8px;
+  font-weight: 600;
+}
+.secondary-btn {
+  background: none;
+  border: none;
+  font-size: 16.8px;
+  color: #000000;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 10px;
+  position: relative;
+}
+.secondary-btn::before {
+  content: "";
+  display: inline-block;
+  width: 48.8px;
+  height: 48.8px;
+  background-image: url("assets/shape_1.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.secondary-btn span {
+  display: inline-block;
+  margin-top: 5px;
+}
+.stats-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background: #f38c54;
+  color: white;
+  padding: 20px;
+  margin-top: auto;
+  flex-shrink: 0;
+}
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.stat::before {
+  content: "";
+  width: 4px;
+  height: 105px;
+  background-color: #f7be2c;
+  display: block;
+}
+.stat-text {
+  display: flex;
+  flex-direction: column;
+}
+.stat h2 {
+  font-size: 56px;
+  font-weight: 600;
+  text-align: left;
+}
+.stat p {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: left;
+  margin-top: -10px;
+}
+.intro-icon {
+  position: relative;
+  display: inline-block;
+  width: 55.9px;
+  height: 55.9px;
+  margin-left: 20px;
+}
+.circle {
+  width: 100%;
+  height: auto;
+}
+.plus {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: auto;
+}
+.title-container {
+  display: inline-flex;
+  align-items: center;
+  gap: 30px;
+}
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.right img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1465px) {
+  nav ul {
+    gap: 25px;
+    padding-left: 30px;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .stat h2 {
+    font-size: 40px;
+  }
+  .stat p {
+    font-size: 17px;
+  }
+
+  .stat::before {
+    height: 80px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+  nav ul li:first-child a {
+    font-size: 20px;
+  }
+  .team {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 70px;
+  }
+  .team-member img {
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+    padding: 0px 25px;
+  }
+  .about-content {
+    width: 100%;
+    padding: 10px;
+    height: 100%;
+  }
+  nav ul {
+    gap: 15px;
+    padding-left: 30px;
+    margin-top: 30px;
+  }
+  .nav-icon {
+    width: 40px;
+    height: 40px;
+    margin-top: 0px;
+  }
+  .hero {
+    padding: 80px 20px;
+  }
+  .hero h1 {
+    font-size: 42px;
+  }
+  .hero p {
+    font-size: 14px;
+  }
+  .info {
+    gap: 30px;
+  }
+  .avatars img {
+    width: 70px;
+    height: 70px;
+    margin-left: -30px;
+  }
+  .primary-btn {
+    width: 180px;
+    height: 50px;
+    font-size: 14px;
+  }
+  .secondary-btn {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .stat h2 {
+    font-size: 40px;
+  }
+  .stat p {
+    font-size: 17px;
+  }
+  .about-content {
+    width: 100%;
+    padding: 10px;
+    height: 100%;
+    margin-top: 60px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .right {
+    order: 2;
+    height: auto;
+    padding: 10px;
+    text-align: left;
+  }
+  .left {
+    order: 1;
+  }
+  .hero {
+    padding: 0;
+    margin-bottom: 20px;
+    margin-top: 60px;
+  }
+  .hero h1 {
+    font-size: 28px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .hero p {
+    font-size: 14px;
+    text-align: left;
+    line-height: 1.6;
+    padding-right: 10px;
+  }
+  .info {
+    margin-top: 25px;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .avatars {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+  .avatars img {
+    width: 50px;
+    height: 50px;
+    margin-left: 0px;
+  }
+  .buttons {
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin-top: 40px;
+  }
+  .primary-btn {
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+  }
+  .secondary-btn {
+    font-size: 14px;
+    align-self: flex-start;
+    white-space: nowrap;
+  }
+  .team {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+    margin-top: 0px;
+  }
+
+  .team-member img {
+    width: 100%;
+    height: auto;
+  }
+  .right {
+    position: relative;
+    z-index: 1;
+    margin-top: 10px;
+  }
+  .stats-footer {
+    position: relative;
+    z-index: 2;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 20px;
+  }
+  .stat {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+  .stat h2 {
+    font-size: 40px;
+  }
+  .stat p {
+    font-size: 18px;
+  }
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 32px;
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    z-index: 1001;
+  }
+  .menu-toggle.active::before {
+    content: "✖";
+  }
+  .nav {
+    background: white;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    position: absolute;
+    top: 0px;
+    left: 18px;
+    padding: 50px;
+    z-index: 1000;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 10px 0;
+  }
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media only screen and (width: 768px) and (height: 1024px),
+  only screen and (width: 1024px) and (height: 768px) {
+  .left {
+    height: 90vh;
+  }
+}
