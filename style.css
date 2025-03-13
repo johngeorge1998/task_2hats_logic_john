@@ -246,7 +246,7 @@ nav ul li:first-child a {
   width: 100%;
   height: auto;
 }
-.plus {
+.bulb-on {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -616,4 +616,62 @@ nav ul li:first-child a {
   .stat {
     margin-bottom: 0;
   }
+}
+
+body.dark-mode {
+  background-color: #121212;
+}
+
+body.dark-mode nav ul li a {
+  color: #fff;
+}
+
+body.dark-mode nav ul li:first-child a {
+  color: #ffffff;
+}
+
+body.dark-mode .hero h1 {
+  color: #ffffff;
+}
+body.dark-mode .hero h2 {
+  color: #ffffff;
+}
+
+body.dark-mode .hero p {
+  color: #ffff;
+}
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.white-circle {
+  color: #fff;
+}
+
+body.dark-mode .primary-btn {
+  background: #fff;
+  color: #000000;
+}
+
+body.dark-mode .secondary-btn {
+  color: #ffffff;
+}
+
+body.dark-mode .stats-footer {
+  background: #121212;
+  color: #fff;
+}
+
+body.dark-mode .stat::before {
+  background-color: #fff;
+}
+
+.intro-icon {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+body.dark-mode .circle {
+  filter: brightness(0.8);
 }

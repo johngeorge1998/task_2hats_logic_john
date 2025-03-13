@@ -32,3 +32,51 @@ function addNavToggle() {
     console.log("Menu toggle or nav-links not found.");
   }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  setTimeout(function () {
+    setupDarkModeToggle();
+  }, 500);
+});
+
+function setupDarkModeToggle() {
+  const darkModeToggle = document.querySelector(".intro-icon");
+  const body = document.body;
+  const plus = document.querySelector(".bulb-on");
+
+  const isDarkMode = localStorage.getItem("darkMode") === "enabled";
+
+  if (isDarkMode) {
+    enableDarkMode();
+  }
+
+  if (darkModeToggle) {
+    darkModeToggle.addEventListener("click", () => {
+      if (body.classList.contains("dark-mode")) {
+        disableDarkMode();
+      } else {
+        enableDarkMode();
+      }
+    });
+  } else {
+    console.log("Dark mode toggle icon not found.");
+  }
+
+  function enableDarkMode() {
+    body.classList.add("dark-mode");
+    localStorage.setItem("darkMode", "enabled");
+
+    if (plus) {
+      plus.src = "assets/bulb-off.svg";
+    }
+  }
+
+  function disableDarkMode() {
+    body.classList.remove("dark-mode");
+    localStorage.setItem("darkMode", "disabled");
+
+    if (plus) {
+      plus.src = "assets/bulb-on.svg";
+    }
+  }
+}
