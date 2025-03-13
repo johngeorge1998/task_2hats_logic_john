@@ -641,8 +641,8 @@ body.dark-mode .hero p {
   color: #ffff;
 }
 
-body.dark-mode .right{
-    background-image:none
+body.dark-mode .right {
+  background-image: none;
 }
 
 body {
@@ -678,4 +678,20 @@ body.dark-mode .stat::before {
 
 body.dark-mode .circle {
   filter: brightness(0.8);
+}
+
+body.dark-mode .menu-toggle {
+  color: #fff;
+}
+
+body.dark-mode .nav-links {
+  background: #121212;
+}
+
+body.dark-mode .nav-links a {
+  color: #fff;
+}
+
+body.dark-mode .nav-links.active {
+  display: flex;
 }
