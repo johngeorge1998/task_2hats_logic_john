@@ -28,12 +28,15 @@ function addNavToggle() {
         body.classList.add("no-scroll");
       } else {
         menuToggle.innerHTML = "☰";
-        body.classList.remove("no-scroll"); 
+        body.classList.remove("no-scroll");
       }
     });
 
-     document.addEventListener("click", (event) => {
-      if (!navLinks.contains(event.target) && !menuToggle.contains(event.target)) {
+    document.addEventListener("click", (event) => {
+      if (
+        !navLinks.contains(event.target) &&
+        !menuToggle.contains(event.target)
+      ) {
         navLinks.classList.remove("active");
         body.classList.remove("no-scroll");
         menuToggle.innerHTML = "☰";
@@ -43,7 +46,6 @@ function addNavToggle() {
     console.log("Menu toggle or nav-links not found.");
   }
 }
-
 
 document.addEventListener("DOMContentLoaded", function () {
   setTimeout(function () {
