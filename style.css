@@ -121,7 +121,7 @@ nav ul li:first-child a {
 .info {
   display: flex;
   gap: 50px;
-  margin-top: 40px;
+  margin-top: 10px;
 }
 .info-description {
   margin-top: 20px;
@@ -639,6 +639,10 @@ body.dark-mode .hero h2 {
 
 body.dark-mode .hero p {
   color: #ffff;
+}
+
+body.dark-mode .right{
+    background-image:none
 }
 
 body {
