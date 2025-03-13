@@ -364,8 +364,6 @@ nav ul li:first-child a {
   }
   nav ul li:first-child a {
     margin-top: 10px;
-
-    
   }
   .container {
     display: flex;
@@ -701,8 +699,6 @@ body.dark-mode .nav-links.active {
 }
 
 body.no-scroll {
-    overflow: hidden;
-    height: 100vh;
-  }
-  
-  
+  overflow: hidden;
+  height: 100vh;
+}
